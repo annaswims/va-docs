@@ -1,0 +1,18 @@
+## Improvement Ideas
+- [ ] We should make a plan to not pass the `X-Key-Inflection` on submit within vets-website, like an optional form config.
+- [ ] Revamp ClaimsBaseController - I don't think the actions are used and not overridden anywhere
+- [ ] learn about the CentralMailClaim Model and how we might use it for tracking
+- [ ] Do we want to use an engine? merely question, not suggestion - mostly so we can deal with less codeowners stuff. 
+- [ ] look at using claim.open_struct_form more
+- [ ] Look at why the ValidationErrors response messes with the case of the schema.
+- [ ] Add it_behaves_like 'a form filler', debugger option that helps me see the pdf and outputs the data going into the pdf
+- [ ] By default, validate schemas when tests run, not with every saved claim being saved
+- [ ] Propose moving more docs to somewhere within git/downloadable for AI & search reasons
+- [ ] Write forms docs within the codebase 
+- [ ] Make an index of all/most markdown files within vets-api
+- [ ] I think that no forms that actually use the `process_attachments!` method in  `SavedClaim` have attachments.
+- [ ] Tell Platform that https://dev-api.va.gov/v0/swagger/index.html and https://department-of-veterans-affairs.github.io/va-digital-services-platform-docs/api-reference/#/ are redundant now.
+- [ ] https://validator.swagger.io/validator/debug?url=https://dev-api.va.gov/v0/apidocs
+- [ ] Swaggger blocks are an evil, unmaintained abstraction.
+- [ ] Surely SWAGGERED_CLASSES in app/controllers/v0/apidocs_controller.rb could be automated
+- [ ] Ensure hashes from vets-json-schema are frozen
