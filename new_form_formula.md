@@ -1,4 +1,4 @@
-# New Form Formula - WIP
+# New Form Formula - the beginning of a rough draft
 
 - [ ] Make a subclass of [SavedClaim](../vets-api/app/models/saved_claim.rb) `vets-api/app/models/saved_claim/form9999.rb`
 ```ruby

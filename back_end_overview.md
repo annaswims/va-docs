@@ -6,11 +6,12 @@
 `V0::Form9999Controller`
 The body will have the structure:
 ```json
-{form:  "{\"key\":\"value\"}" }
+{"form":  "{\"key\":\"value\"}" }
 ```
 Yes, the typical pattern is that the form value is not JSON, but stringified json, like This is odd, but the default pattern because of the `X-Key-Inflection` that transforms json keys. (see TOD0 #1 below)
 
 For forms that have have documentation already you can view the API docs at [http://localhost:3000/v0/swagger](<http://localhost:3000/v0/swagger/index.html?urls.primaryName=VA.gov%20Swagger%20Docs%20(v2)>) or [https://dev-api.va.gov/v0/swagger/index.html](https://dev-api.va.gov/v0/swagger/index.html)
+
 ### The controller will create and validate new SavedClaim  
 <details>
 <summary>Slim FormController example:</summary>
@@ -48,11 +49,13 @@ If the claim is valid, a `SavedClaimSerializer.new(claim)` object will be return
 </details>
 
 #### Validations
+
 The `claim.form` data must be present, a string (not JSON) and valid against the schema.
 
 The default schema location is  `VetsJsonSchema::SCHEMAS[form_id]`, but can be overridden with `form_schema` in `SavedClaim::Form9999`. The schema should be valid. 
 
 ### Submission
+
   The controller calls `claim.process_attachments!` process_attachments is a bad name for what's happening. 
   It essentially just enqueues a job with: 
 
@@ -137,6 +140,11 @@ If you raise something that inherits from `Common::Exceptions::BaseError` (for e
 ## Schemas
 Nearly all form schemas use 
   {"$schema": "http://json-schema.org/draft-04/schema#"}
+
+see [Schema Links](../va-docs/README.md#schema-links)
+
+## Form Submission Status
+[Display Form Status for a non-Lighthouse Benefits Intake API Form](../vets-api/lib/forms/submission_statuses/README.md)
 
 ## Testing
 https://depo-platform-documentation.scrollhelp.site/developer-docs/vcr-debugging
