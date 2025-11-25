@@ -9,8 +9,12 @@
 
 [vets-api Index](vets_website_index.md) - an AI generated index of all of the markdown files in vets-api
 
+[Mocked Authentication](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity/Products/Mocked%20Authentication/readme.md )
+
+https://dev.va.gov/sign-in/mocked-auth 
 
 ## Front end links:
+
 [VA Forms Library Overview](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-overview)
 
 [Explore Pattern Demonstrations in Our Sample Form](https://staging.va.gov/mock-form-patterns/introduction )
@@ -21,7 +25,7 @@
 
 
 ## Schema Links
-read all 3 before going down the wrong road:
+Read all 3 before going down the wrong road:
 
 [VA Forms Library - About schema and uiSchema](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-about-schema-and-uischema)
 
@@ -48,6 +52,7 @@ https://design.va.gov/
 
 - https://github.com/department-of-veterans-affairs/vagov-content  
   _The VA.gov Interim CMS_ **Interim** is a lie.
+
 ### Back End
 - https://github.com/department-of-veterans-affairs/vets-api  
   _API powering VA.gov_
