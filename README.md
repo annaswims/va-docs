@@ -1,17 +1,39 @@
+## Admin or Dev Links
 
-[Back End Overview](back_end_overview.md)
+[BIO-Aquia links](BIO-Aquia.md)
 
-[New Form Formula](new_form_formua.md)
+### Deploy status:
+- https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/frontend-support-dashboard
+  
+### Feature toggle
+- http://localhost:3000/flipper/features
+- https://sandbox-api.va.gov/flipper/features
+- https://staging-api.va.gov/flipper/features
+- https://dev-api.va.gov/flipper/features
+- https://api.va.gov/flipper/features
+  
+### Mocked Authentication
+[Mocked Authentication Docs](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity/Products/Mocked%20Authentication/readme.md )
+- http://dev.va.gov/sign-in/mocked-auth
+- http://localhost:3001/sign-in/mocked-auth
 
-[Improvement Ideas](improvement_ideas.md)
+### API Status
+- https://dev-api.va.gov/v0/status
+- https://staging-api.va.gov/v0/status
+- https://api.va.gov/v0/status
 
-[vets-website Index](vets_website_index.md) - an AI generated index of all of the markdown files in vets-website
+### API Docs 
+- http://localhost:3000/v0/swagger/index.html?urls.primaryName=VA.gov%20Swagger%20Docs%20(v2)
+  - http://localhost:3000/v0/swagger 
+  - http://localhost:3000/v0/apidocs  
+- https://dev-api.va.gov/v0/swagger/index.html?urls.primaryName=VA.gov%20Swagger%20Docs%20(v2)
+  - https://dev-api.va.gov/v0/swagger 
+  - https://dev-api.va.gov/v0/apidocs  
+  
+- https://department-of-veterans-affairs.github.io/va-digital-services-platform-docs/api-reference/#/
 
-[vets-api Index](vets_website_index.md) - an AI generated index of all of the markdown files in vets-api
-
-[Mocked Authentication](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity/Products/Mocked%20Authentication/readme.md )
-
-https://dev.va.gov/sign-in/mocked-auth 
+### Analytics Opt-out
+https://www.va.gov/analytics-opt-out.html
 
 ## Front end links:
 
@@ -36,6 +58,18 @@ Read all 3 before going down the wrong road:
 
 ## Design Docs
 https://design.va.gov/
+
+# Anna's docs
+
+[Back End Overview](back_end_overview.md)
+
+[New Form Formula](new_form_formua.md)
+
+[Improvement Ideas](improvement_ideas.md)
+
+[vets-website Index](vets_website_index.md) - an AI generated index of all of the markdown files in vets-website
+
+[vets-api Index](vets_website_index.md) - an AI generated index of all of the markdown files in vets-api
 
 ## Relevant Repositories
 ### Documentation and tickets
