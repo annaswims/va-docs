@@ -145,6 +145,7 @@ see [Schema Links](../va-docs/README.md#schema-links)
 
 ## Form Submission Status
 [Display Form Status for a non-Lighthouse Benefits Intake API Form](../vets-api/lib/forms/submission_statuses/README.md)
+[Form Submission Status: Backend Documentation](https://github.com/department-of-veterans-affairs/va.gov-team-sensitive/blob/master/products/identity-personalization/my-va/form-status/backend_documentation.md)
 
 ## Testing
 https://depo-platform-documentation.scrollhelp.site/developer-docs/vcr-debugging
