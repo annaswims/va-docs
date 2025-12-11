@@ -12,20 +12,27 @@ VA.gov data is tied to a person's identity, not their login method. On the back 
 
 When a person creates an account on id.me or login.gov the bare minimum needed to create an account is an email address, password, and email verification. That gives is a minimal Authentication.  We call this LOA1 (level of authorization 1).  Users don't have access to any personal information on VA.gov. They can't edit their contact info on their profile or see much/any personalized data.  They can start some forms (forms that choose to accept this level of authentication). No information will be prefilled for the user, but they can enter data, save the form and return to finish it later (InProgressForm in the code).
 
-When a person creates an account on id.me or login.gov AND completes the identity verification steps, AND enables 2-factor authentication they are considered LOA2. We have confidence that they are who they say they are. At this point, they can complete almost any form. If the person who is logged in is a Veteran OR someone who has interacted with the VA before (education, healthcare or other benefits) we probably (but not certainly) can connect them with the data in the MPI. We may not find the person in the MPI database if it's been decades since they interacted with the VA or have a new name or something. 
+When a person creates an account on id.me or login.gov AND completes the identity verification steps, AND enables 2-factor authentication they are considered LOA2. We have confidence that they are who they say they are. At this point, they can complete almost any form. If the person who is logged in is a Veteran OR someone who has interacted with the VA before (education, healthcare or other benefits) we probably (but not certainly) can connect them with the data in the MPI. We may not find the person in the MPI database if it's been decades since they interacted with the VA or have a new name or something🔥. 
 
 For the most part, what a user is allowed to do is a combination of "VA.gov accepts that level of authorization LOA1/2 for this action" and "We have enough data to proceed (we connected this user to data we have already)".  
 
 Once a LOA2 user is logged in the api requests user data from a variety of sources 
-Major ones are: VA Profile (email, addresses, phone), Identity provider (Date of birth, ssn), MPI (see * below)
+Major ones are: VA Profile (email, addresses, phone), Identity provider (Date of birth, ssn), MPI (see 🙋‍♀️ below)
 
 See the User model for user attributes. 
 https://github.com/department-of-veterans-affairs/vets-api/blob/master/app/models/user.rb
 
 
-* MPI/MVI Has been renamed over the years as it scope grew.  Master Patient Index -> Master Veteran Index -> Master Person Index https://catalog.data.gov/dataset/master-veteran-index-mvi It's now the authoritative data source for any kind of person who interacts with the VA.
+🙋‍♀️ MPI/MVI Has been renamed over the years as it scope grew.  Master Patient Index -> Master Veteran Index -> Master Person Index https://catalog.data.gov/dataset/master-veteran-index-mvi It's now the authoritative data source for any kind of person who interacts with the VA.
 
-* The 1973 National Personnel Records Center affects VA's veteran records
+🔥 The 1973 National Personnel Records Center affects VA's veteran records
+
+### UX
+Some examples of how we progressively let people know they need to do more:
+
+![Image 1](./images/form526_LOA1.png)
+![Image 2](./images/form526_unauth.png)
+![Image 1](./images/vaprofile_LOA1.png)
   
 ## Now what?
 

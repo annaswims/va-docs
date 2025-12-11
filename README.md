@@ -5,8 +5,9 @@ https://depo-platform-documentation.scrollhelp.site/
 
 [BIO-Aquia links](BIO-Aquia.md)
 
-### Deploy status:
-- https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/frontend-support-dashboard
+### Deploys
+- [Deploy status](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/frontend-support-dashboard)
+- [Deploy Schedule](https://depo-platform-documentation.scrollhelp.site/developer-docs/deployments#Deployments-Automateddeploymentschedule)
   
 ### Feature toggle
 - http://localhost:3000/flipper/features
