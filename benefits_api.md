@@ -3,13 +3,15 @@ Verifying submission:
 
 [Datadog Dashboard](https://vagov.ddog-gov.com/dashboard/4d8-3fn-dbp/benefits-intake-form-submission-tracking?fromUser=false&refresh_mode=sliding&view=spans&from_ts=1717772535566&to_ts=1718377335566&live=true)
 
+https://vagov.ddog-gov.com/dashboard/8zk-ja2-xvm/benefits-intake-submission-remediation-report 
+
 
 ```ruby
 uuid = SavedClaim::Form210779.find(1).form_submissions.last.form_submission_attempts.last.benefits_intake_uuid
 ```
 
 ```bash
-curl -X GET 'https://sandbox-api.va.gov/services/vba_documents/v1/uploads/0631c920-e3b0-4792-86b5-29ad009bf174/download' \
+curl -X GET 'https://sandbox-api.va.gov/services/vba_documents/v1/uploads/0f0a689d-545a-4be4-b530-97686cc22183/download' \
 --header 'accept: application/zip' --header 'apikey: MY_API_KEY' -o test.zip
 ```
 response:  a zip with filled pdf and metadata.json
@@ -55,3 +57,6 @@ curl -X GET 'https://sandbox-api.va.gov/services/vba_documents/v1/uploads/0631c9
     }
 }
 ```
+
+
+0f0a689d-545a-4be4-b530-97686cc22183
