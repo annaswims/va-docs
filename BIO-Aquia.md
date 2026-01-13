@@ -33,7 +33,7 @@ Examination for Housebound Status or Permanent Need for Regular Aid and Attendan
 
 # VA Form 21p-530a
 State Application for Interment Allowance (Under 38 U.S.C. Chapter 23)
-- https://www.va.gov/find-forms/about-form-21p-530a/
+- https://www.va.gov/forms/about-form-21p-530a/
 - https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/21P-530a
   
 - http://localhost:3001/submit-state-interment-allowance-form-21p-530a/introduction
